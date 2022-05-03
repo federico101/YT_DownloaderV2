@@ -20,6 +20,7 @@ header {
 header ul li {
     list-style: none;
     display: flex;
+    flex-direction: column;
 }
 
 header ul li a {
@@ -35,8 +36,10 @@ section .download-section {
 }
 
 .card {
-    background-color: #FFFFFF;
+    background-color: #f0f0f0;
     padding: 15px;
     gap: 10px;
+    height: auto;
+    width: 400px;
 }
 
