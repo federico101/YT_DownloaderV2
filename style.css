@@ -17,12 +17,9 @@ header {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
-header ul {
-    display: flex;
-}
-
 header ul li {
     list-style: none;
+    display: inline-block;
 }
 
 header ul li a {
@@ -34,6 +31,8 @@ header ul li a {
 .download-section {
     min-height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
