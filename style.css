@@ -19,17 +19,16 @@ header {
 
 header ul li {
     list-style: none;
-    display: flex;
-    flex-direction: column;
 }
 
 header ul li a {
+    display: flex;
     text-decoration: none;
     margin: 5px;
     padding: 5px 9px;
 }
 
-section .download-section {
+.download-section {
     min-height: 100vh;
     width: 100%;
     align-items: center;
