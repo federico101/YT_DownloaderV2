@@ -1,4 +1,40 @@
 <!DOCTYPE html>
-<head></head>
-<body><h1>test</h1></body>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YT Download</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo"><b>YT</b>Downloader</h2>
+    </header>
+    
+    <section class="download-section">
+        <div class="card">
+            <div class="url-container">
+                <label for="url">YouTube URL</label>
+                <input type="text" name="url" value="URL here" />
+            </div>
+            
+            <div class="format-container">
+                <label for="">Video Format</label>
+                <select class="format" required>
+                    <option value="mp3">Mp3</option>
+                    <option value="mp4a">144p</option>
+                    <option value="360">360p</option>
+                    <option value="480">480p</option>
+                    <option value="720">720p</option>
+                    <option value="1080">1080p</option>
+            </div>
+            
+            <div class="dl-container">
+                <button class="downloadd" type="submit">Start Download</button>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
