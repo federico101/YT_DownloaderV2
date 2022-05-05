@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yametech - YTDL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
+    {% block head %} {% endblock head %}
+</head>
+
+<body>
+    <h2>Home Page</h2>
+    <form method="POST">
+        <input type="text" name="url" placeholder="YouTube URL">
+        <button type="submit">Start</button>
+    </form>
+</body>
+
+</html>

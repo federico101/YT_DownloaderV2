@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+    <h2>{{ url.title }}</h2>
+    <form action="{{ url_for('dl_video')}}" method="POST">
+        <select name="itag">
+            {% for i in url.streams.filter(progressive=True) %}
+            <option value="{{ i.itag }}">{{ i.resolution }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">DOWNLOAD</button>
+    </form>
+</body>
+
+</html>
