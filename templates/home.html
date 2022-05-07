@@ -5,16 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yametech - YTDL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/03853e84a6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
     {% block head %} {% endblock head %}
 </head>
 
 <body>
-    <h2>Home Page</h2>
-    <form method="POST">
-        <input type="text" name="url" placeholder="YouTube URL">
-        <button type="submit">Start</button>
-    </form>
+    <header class="nav">
+        <div class="logo">
+            <p><b class="yt">YT</b>Download</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a class="donate" href="#">DOnate</a></li>
+            </ul>
+        </div>
+        
+        <div class="links">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </header>
+    
+    <div class="url-sec">
+        <p><b class="yt">YT</b>Download</p>
+        <div class="url-card">
+            <form method="POST">
+                <input type="text" name="url" placeholder="YouTube URL" id="url-input">
+                <button type="submit">Start</button>
+            </form>
+        </div>
+        
+        <p><i><b>YT</b>Download</i> is a Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam placerat laoreet arcu, a tempor justo finibus sed. Sed non mi arcu. Quisque facilisis magna diam, in volutpat libero vulputate eu. Aenean vulputate libero id finibus dignissim. Sed eros eros, lobortis nec aliquet a, varius et nibh. Suspendisse potenti. Integer et nisi sed tortor iaculis gravida. Mauris magna dolor, vulputate non commodo vitae, pellentesque nec neque. Vestibulum sit amet tincidunt turpis.</p>
+    </div>
 </body>
 
 </html>

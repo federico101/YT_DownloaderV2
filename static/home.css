@@ -1,0 +1,58 @@
+:root {
+    --white: #FFFFFF;
+    --white2: #F0F0F0;
+    --whiteText: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white2);
+}
+
+header {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 10px 13px;
+    background-color: var(--white);
+}
+
+header ul li {
+    display: block;
+    list-style: none;
+    margin: 30px 0 30px 0;
+}
+
+header ul li a {
+    color: var(--whiteText);
+    text-decoration: none;
+    padding: 5px 9px;
+}
+
+
+/*======================================================*/
+
+.url-sec {
+    padding: 50px; 
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.url-card {
+    width: 70%;
+    background-color: var(--white);
+    padding: 5px 9px;
+}
+
+.url-card input {
+    width: 90%;
+}
