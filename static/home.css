@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins&display=swap');
+
 :root {
-    --white: #FFFFFF;
+    --white: #fefefe;
     --white2: #F0F0F0;
     --whiteText: #000000;
 }
@@ -11,48 +13,112 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     background-color: var(--white2);
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 28% 28% 28% 16%;
+    grid-template-rows: 50% 50% 30%;
+    grid-template-areas: 
+        "url-form url-form url-form url-form"
+        "url-form url-form url-form url-form"
+        "smth smth smth smth"
 }
 
-header {
-    float: right;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    padding: 10px 13px;
-    background-color: var(--white);
+.nav {
+    font-family: "Koulen", sans-serif;
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
 }
 
-header ul li {
-    display: block;
+.nav ul {
+    float: left;
+}
+
+.nav ul li {
     list-style: none;
-    margin: 30px 0 30px 0;
+    margin: 0.5rem 0 2rem 0;
 }
 
-header ul li a {
-    color: var(--whiteText);
+.nav ul li a {
     text-decoration: none;
+    color: darkred;
+}
+
+.nav .logo p {
+    font-size: 3rem;
+    color: white;
+}
+
+.nav ul li a {
     padding: 5px 9px;
+    background-color: #efefef;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
-
-/*======================================================*/
-
-.url-sec {
-    padding: 50px; 
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.url-form {
+    grid-area: url-form;
+    background-image: url("img/red-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*=========*/
+    color: white;
+    padding: 3rem;
 }
 
-.url-card {
+.url-form p {
+    font-size: 1.2rem;
+}
+
+.url-form .url-card {
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    background: url("img/red-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem 0 4rem 12rem; 
+    padding: 30px;
     width: 70%;
-    background-color: var(--white);
-    padding: 5px 9px;
+    border-radius: 10px;
+    box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.2),
+        10px 10px 20px rgba(255, 255, 255, 0.3),
+        inset 10px 10px 15px rgba(255, 255, 255, 0.1),
+        inset -10px -10px 20px rgba(0, 0, 0, 0.2);
+        
 }
 
-.url-card input {
-    width: 90%;
+.url-form .url-card .input {
+    margin: 10px 0 5px 0;
+}
+
+.url-form .url-card input {
+    width: 85%;
+    outline: none;
+    margin-right: 5px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.url-form .url-card button {
+    padding: 7px 19px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+}
+
+.url-form .url-card span {
+    font-size: .8rem;
+}
+
+.donate {
+    grid-area: smth;
+    color: white;
+    background-color: black;
 }
