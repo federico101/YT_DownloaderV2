@@ -18,11 +18,12 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 28% 28% 28% 16%;
-    grid-template-rows: 50% 50% 30%;
+    grid-template-rows: 30% 30% 50% 10%;
     grid-template-areas: 
         "url-form url-form url-form url-form"
         "url-form url-form url-form url-form"
         "smth smth smth smth"
+        "foot foot foot foot"
 }
 
 .nav {
@@ -117,8 +118,51 @@ body {
     font-size: .8rem;
 }
 
-.donate {
+.section2 {
     grid-area: smth;
     color: white;
     background-color: black;
+    min-height: 100vh;
+}
+
+.donate,
+.about {
+    width: 50rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    background-color: #e0e0e0;
+    color: black;
+}
+
+.donate h2,
+.about h2 {
+    font-family: 'Koulen', sans-serif;
+}
+
+.donate {
+    position: relative;
+    left: -3rem;
+    padding: 2rem 2rem 2rem 6rem;
+}
+
+.about {
+    position: relative;
+    float: right;
+    padding: 2rem 3rem 2rem 2rem;
+}
+
+.footer {
+    grid-area: foot;
+    background-color: black;
+    color: white;
+    padding: 0 3rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h2 {
+    padding: 0.5rem 1rem;
+    background-color: red;
+    border-radius: 10px;
 }
