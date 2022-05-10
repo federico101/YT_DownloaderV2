@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Yametech - YTDL</title>
+    <title>YTDL</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/03853e84a6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}">
-    {% block head %} {% endblock head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
 </head>
 
 <body>
@@ -18,14 +17,14 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Donate</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sec2">About</a></li>
+                <li><a href="#sec2">Donate</a></li>
             </ul>
         </div>
     </header>
     
-    <div class="url-form">
+    <div class="url-form" id="home">
         <div class="url-card">
             <form method="POST">
                 <h3>Enter YouTube link:</h3>
@@ -38,8 +37,8 @@
         </div>
     </div>
 
-    <div class="section2">
-        <div class="donate">
+    <div class="section2" id="sec2">
+        <div class="donate" >
             <h1>DONATE</h1>
             <p>
                 If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and bandwidth bill. There is no minimum donation, any sum is appreciated. Click <a href="https://www.paypal.com/donate/?hosted_button_id=LB6LZADXHPU8S">here</a> to donate using PayPal. Thank you for your support.

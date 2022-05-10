@@ -61,7 +61,7 @@ body {
 
 .url-form {
     grid-area: url-form;
-    background-image: url("img/red-bg.jpg");
+    background-image: url("../img/red-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -78,7 +78,7 @@ body {
     text-align: center;
     border-radius: 50px;
     color: white;
-    background: url("img/red-bg.jpg");
+    background: url("../img/red-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

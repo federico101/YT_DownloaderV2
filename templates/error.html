@@ -4,11 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>YTDL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css')}}">
 </head>
 
 <body>
-    bybbybyby
+    <section class="error-sec">
+        <div class="err">
+            <h1>Some error occured please retry again.</h1>
+            <h4 style="padding-top: 1rem;">These might be because of:</h4>
+            <div class="smt">
+                <ul>
+                    <li>Didn't put any URL in the input</li>
+                    <li>Some error of the server</li>
+                    <li>Your internet connection</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
