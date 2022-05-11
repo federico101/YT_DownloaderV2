@@ -18,12 +18,10 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 28% 28% 28% 16%;
-    grid-template-rows: 30% 30% 50% 10%;
+    grid-template-rows: 50% 50% 25%;
     grid-template-areas: 
         "url-form url-form url-form url-form"
         "url-form url-form url-form url-form"
-        "smth smth smth smth"
-        "foot foot foot foot"
 }
 
 .nav {
@@ -33,33 +31,14 @@ body {
     left: 4rem;
 }
 
-.nav ul {
-    float: left;
-}
-
-.nav ul li {
-    list-style: none;
-    margin: 0.5rem 0 2rem 0;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: darkred;
-}
-
 .nav .logo p {
     font-size: 3rem;
     color: white;
 }
 
-.nav ul li a {
-    padding: 5px 9px;
-    background-color: #efefef;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
-}
-
 .url-form {
+    display: grid;
+    place-items: center;
     grid-area: url-form;
     background-image: url("../img/red-bg.jpg");
     background-repeat: no-repeat;
@@ -82,7 +61,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 5rem 0 4rem 12rem; 
     padding: 30px;
     width: 70%;
     border-radius: 10px;
@@ -116,53 +94,4 @@ body {
 
 .url-form .url-card span {
     font-size: .8rem;
-}
-
-.section2 {
-    grid-area: smth;
-    color: white;
-    background-color: black;
-    min-height: 100vh;
-}
-
-.donate,
-.about {
-    width: 50rem;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-    background-color: #e0e0e0;
-    color: black;
-}
-
-.donate h2,
-.about h2 {
-    font-family: 'Koulen', sans-serif;
-}
-
-.donate {
-    position: relative;
-    left: -3rem;
-    padding: 2rem 2rem 2rem 6rem;
-}
-
-.about {
-    position: relative;
-    float: right;
-    padding: 2rem 3rem 2rem 2rem;
-}
-
-.footer {
-    grid-area: foot;
-    background-color: black;
-    color: white;
-    padding: 0 3rem 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer h2 {
-    padding: 0.5rem 1rem;
-    background-color: red;
-    border-radius: 10px;
 }
