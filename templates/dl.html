@@ -4,19 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/03853e84a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dl.css')}}">
+    <title>YTDL</title>
 </head>
 
 <body>
-    <h2>{{ url.title }}</h2>
-    <form action="{{ url_for('dl_video')}}" method="POST">
-        <select name="itag">
-            {% for i in url.streams.filter(progressive=True) %}
-            <option value="{{ i.itag }}">{{ i.resolution }}</option>
-            {% endfor %}
-        </select>
-        <button type="submit">DOWNLOAD</button>
-    </form>
+    <section class="dl-sec">
+        <div class="dl">
+            <div class="thumbnail-pic">
+                <img src="{{ url.thumbnail_url }}" alt="thumbnail">
+            </div>
+            <div class="vid-info">
+                <h2>{{ url.title }}</h2>
+                <form action="{{ url_for('dl_video')}}" method="POST">
+                    <select name="itag">
+                        {% for i in url.streams.filter(progressive=True) %}
+                        <option value="{{ i.itag }}">{{ i.resolution }}</option>
+                        {% endfor %}
+                    </select>
+                    <button type="submit"><i class="fa-solid fa-download"></i>Download</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
