@@ -21,3 +21,10 @@
 .err .smt {
     padding: 0 .5rem .5rem 1rem;
 }
+
+
+@media (max-width: 900px) {
+    .error-sec {
+        padding: 20px;
+    }
+}

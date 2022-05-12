@@ -17,11 +17,11 @@ body {
     background-color: var(--white2);
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 28% 28% 28% 16%;
-    grid-template-rows: 50% 50% 25%;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
     grid-template-areas: 
-        "url-form url-form url-form url-form"
-        "url-form url-form url-form url-form"
+        "url-form"
+        "url-form"
 }
 
 .nav {
@@ -94,4 +94,29 @@ body {
 
 .url-form .url-card span {
     font-size: .8rem;
+}
+
+
+@media (max-width: 900px) {
+    
+    .url-form {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav {
+        top: .5rem;
+        left: 2rem;
+    }
+    
+    .url-form .url-card {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .url-form .url-card input {
+        width: 80%;
+    }
 }

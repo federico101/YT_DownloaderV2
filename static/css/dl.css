@@ -60,3 +60,27 @@ button {
 button i {
     margin-right: 10px;
 }
+
+@media (max-width: 900px) {
+    .dl-sec {
+        padding: 10px;
+    }
+    
+    .dl {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .dl-sec .vid-info,
+    .thumbnail-pic {
+        width: 100%;
+    }
+    
+    .dl-sec .vid-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
